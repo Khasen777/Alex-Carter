@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Carter's Portfolio</title>
+  <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Alex Carter</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Discover how I can help your business thrive with strategic growth solutions.</p>
+    <button onclick="scrollToSection('about')">Learn More</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Alex Carter, a seasoned digital strategist and consultant. With over five years of experience in the industry, I’ve helped businesses grow and increase their revenue through innovative marketing and strategic insights.</p>
+    <div class="milestones">
+      <div class="milestone">
+        <h3>5+ Years of Experience</h3>
+        <p>In digital marketing, consulting, and brand building.</p>
+      </div>
+      <div class="milestone">
+        <h3>$8M+ Revenue Generated</h3>
+        <p>Proven track record of delivering measurable results for clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service">
+      <h3>Business Consulting</h3>
+      <p>Providing strategic guidance to scale your business and maximize growth.</p>
+    </div>
+    <div class="service">
+      <h3>Digital Marketing</h3>
+      <p>Creating tailored marketing strategies to boost engagement and conversions.</p>
+    </div>
+    <div class="service">
+      <h3>Brand Strategy</h3>
+      <p>Helping you craft a powerful brand identity that resonates with your audience.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Chat Widget -->
+  <div id="chat-widget">
+    <div id="chat-header" onclick="toggleChat()">Chat with Alex</div>
+    <div id="chat-content">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="sendMessage(event)">
+    </div>
+  </div>
+
+  <script src="personal.js"></script>
+</body>
+</html>
+
